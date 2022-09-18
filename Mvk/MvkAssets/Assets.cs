@@ -32,7 +32,7 @@ namespace MvkAssets
         /// </summary>
         public static AssetsTexture ConvertFontToTexture(FontSize size)
         {
-            switch(size)
+            switch (size)
             {
                 case FontSize.Font8: return AssetsTexture.Font8;
                 case FontSize.Font16: return AssetsTexture.Font16;

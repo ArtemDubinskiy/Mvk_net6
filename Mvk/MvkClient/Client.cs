@@ -31,7 +31,7 @@ namespace MvkClient
         /// <summary>
         /// Клиентский объект мира
         /// </summary>
-        public WorldClient World { get; private set; }
+        public WorldClient? World { get; private set; }
         /// <summary>
         /// Объект звуков
         /// </summary>

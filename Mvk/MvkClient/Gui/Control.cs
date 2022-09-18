@@ -141,7 +141,7 @@ namespace MvkClient.Gui
         /// <summary>
         /// Звук клика
         /// </summary>
-        protected void SampleClick() => screen.ClientMain.Sample.PlaySound(AssetsSample.Click, .3f);
+        protected void SampleClick() => screen.ClientMain.Sample.PlaySound(MvkServer.Sound.AssetsSample.Click, .3f);
 
         /// <summary>
         /// Получить x в зависимости от смещения

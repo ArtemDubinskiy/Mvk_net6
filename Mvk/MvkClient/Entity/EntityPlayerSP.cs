@@ -13,8 +13,6 @@ using MvkServer.Util;
 using MvkServer.World.Block;
 using MvkServer.World.Chunk;
 using SharpGL;
-using System;
-using System.Collections.Generic;
 
 namespace MvkClient.Entity
 {
@@ -34,11 +32,11 @@ namespace MvkClient.Entity
         /// <summary>
         /// массив матрицы перспективу камеры 3D
         /// </summary>
-        public float[] Projection { get; private set; }
+        public float[]? Projection { get; private set; }
         /// <summary>
         /// массив матрицы расположения камеры в пространстве
         /// </summary>
-        public float[] LookAt { get; private set; }
+        public float[]? LookAt { get; private set; }
         /// <summary>
         /// Вектор луча
         /// </summary>
@@ -133,7 +131,7 @@ namespace MvkClient.Entity
         /// <summary>
         /// массив векторов расположения камеры в пространстве для DisplayList
         /// </summary>
-        private vec3[] lookAtDL;
+        private vec3[]? lookAtDL;
 
         /// <summary>
         /// Счётчик паузы анимации левого удара, такты

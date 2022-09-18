@@ -1,0 +1,203 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MvkLauncher/1.0.0": {
+        "dependencies": {
+          "MvkClient": "1.0.0",
+          "SharpGL": "3.1.1",
+          "SharpGL.WinForms": "3.1.1"
+        },
+        "runtime": {
+          "MvkLauncher.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {},
+      "Microsoft.Win32.SystemEvents/6.0.0": {},
+      "NVorbis/0.10.4": {
+        "dependencies": {
+          "System.Memory": "4.5.3",
+          "System.ValueTuple": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NVorbis.dll": {
+            "assemblyVersion": "0.10.4.0",
+            "fileVersion": "0.10.4.0"
+          }
+        }
+      },
+      "SharpGL/3.1.1": {
+        "runtime": {
+          "lib/netcoreapp3.1/SharpGL.dll": {
+            "assemblyVersion": "3.1.1.0",
+            "fileVersion": "3.1.1.0"
+          }
+        }
+      },
+      "SharpGL.SceneGraph/3.1.1": {
+        "dependencies": {
+          "SharpGL": "3.1.1",
+          "System.Drawing.Common": "6.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SharpGL.SceneGraph.dll": {
+            "assemblyVersion": "3.1.1.0",
+            "fileVersion": "3.1.1.0"
+          }
+        }
+      },
+      "SharpGL.WinForms/3.1.1": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "SharpGL": "3.1.1",
+          "SharpGL.SceneGraph": "3.1.1",
+          "System.Data.DataSetExtensions": "4.5.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SharpGL.WinForms.dll": {
+            "assemblyVersion": "3.1.1.0",
+            "fileVersion": "3.1.1.0"
+          }
+        }
+      },
+      "System.Data.DataSetExtensions/4.5.0": {},
+      "System.Drawing.Common/6.0.0": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "6.0.0"
+        }
+      },
+      "System.Memory/4.5.3": {},
+      "System.Resources.Extensions/6.0.0": {},
+      "System.ValueTuple/4.5.0": {},
+      "MvkAssets/1.0.0": {
+        "dependencies": {
+          "System.Drawing.Common": "6.0.0",
+          "System.Resources.Extensions": "6.0.0"
+        },
+        "runtime": {
+          "MvkAssets.dll": {}
+        }
+      },
+      "MvkClient/1.0.0": {
+        "dependencies": {
+          "MvkAssets": "1.0.0",
+          "MvkServer": "1.0.0",
+          "NVorbis": "0.10.4",
+          "SharpGL": "3.1.1",
+          "System.Drawing.Common": "6.0.0"
+        },
+        "runtime": {
+          "MvkClient.dll": {}
+        }
+      },
+      "MvkServer/1.0.0": {
+        "runtime": {
+          "MvkServer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MvkLauncher/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "path": "microsoft.csharp/4.7.0",
+      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
+    },
+    "Microsoft.Win32.SystemEvents/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
+      "path": "microsoft.win32.systemevents/6.0.0",
+      "hashPath": "microsoft.win32.systemevents.6.0.0.nupkg.sha512"
+    },
+    "NVorbis/0.10.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WYnil3DhQHzjCY0dM9I2B3r1vWip90AOuQd25KE4NrjPQBg0tBJFluRLm5YPnO5ZLDmwrfosY8jCQGQRmWI/Pg==",
+      "path": "nvorbis/0.10.4",
+      "hashPath": "nvorbis.0.10.4.nupkg.sha512"
+    },
+    "SharpGL/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tLTsMAl0XMjLhVK++ga65tObn/8IyPEfZ9i+icELcAPJ92mgB/DllVlfDBNJOP5T3C4GuT6YEZn3CVR11GH2qQ==",
+      "path": "sharpgl/3.1.1",
+      "hashPath": "sharpgl.3.1.1.nupkg.sha512"
+    },
+    "SharpGL.SceneGraph/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VY4SS/y8Ob8Mbi/oqh0lHA0SRCfRCeZ+/Kk8AM4EAw/vhHdpS1LEuVa0hVE3gA84tp3YFVmwXn8GjeLIA/VfmA==",
+      "path": "sharpgl.scenegraph/3.1.1",
+      "hashPath": "sharpgl.scenegraph.3.1.1.nupkg.sha512"
+    },
+    "SharpGL.WinForms/3.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n+4xnGkVPDRymxP4vPhtcPFw794KrESaXLIBCsDxuj//zx31SGmG1B53Y63x9cS1xlaH6KotHV1OV/MLvTKI0A==",
+      "path": "sharpgl.winforms/3.1.1",
+      "hashPath": "sharpgl.winforms.3.1.1.nupkg.sha512"
+    },
+    "System.Data.DataSetExtensions/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-221clPs1445HkTBZPL+K9sDBdJRB8UN8rgjO3ztB0CQ26z//fmJXtlsr6whGatscsKGBrhJl5bwJuKSA8mwFOw==",
+      "path": "system.data.datasetextensions/4.5.0",
+      "hashPath": "system.data.datasetextensions.4.5.0.nupkg.sha512"
+    },
+    "System.Drawing.Common/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NfuoKUiP2nUWwKZN6twGqXioIe1zVD0RIj2t976A+czLHr2nY454RwwXs6JU9Htc6mwqL6Dn/nEL3dpVf2jOhg==",
+      "path": "system.drawing.common/6.0.0",
+      "hashPath": "system.drawing.common.6.0.0.nupkg.sha512"
+    },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "System.Resources.Extensions/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pBnVzNQYd0OHqh0VLu/hi0zFOTtyF8QwtziQBmzX/ZtVOea4+JEVOGu29DHeSOA0a9SFrYjQorBrOLuKLhcMNQ==",
+      "path": "system.resources.extensions/6.0.0",
+      "hashPath": "system.resources.extensions.6.0.0.nupkg.sha512"
+    },
+    "System.ValueTuple/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
+      "path": "system.valuetuple/4.5.0",
+      "hashPath": "system.valuetuple.4.5.0.nupkg.sha512"
+    },
+    "MvkAssets/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MvkClient/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MvkServer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

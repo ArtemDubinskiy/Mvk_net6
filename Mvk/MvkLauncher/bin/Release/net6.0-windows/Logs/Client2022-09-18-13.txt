@@ -1,0 +1,2 @@
+[14:32:47] client.start
+[14:33:15] client.stoped

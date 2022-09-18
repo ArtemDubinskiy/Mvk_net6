@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "bl4B46FkotU+5WwJ97psf5sKUfNJx42x6ahOmu/5eTPF9o6jL0NBxwKeqneRCgTtQ25NC7qdyFozYEG4zBGjxQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\artem\\Source\\Repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkLauncher\\MvkLauncher.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\artem\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\nvorbis\\0.10.4\\nvorbis.0.10.4.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\sharpgl\\3.1.1\\sharpgl.3.1.1.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\sharpgl.scenegraph\\3.1.1\\sharpgl.scenegraph.3.1.1.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\sharpgl.winforms\\3.1.1\\sharpgl.winforms.3.1.1.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\system.resources.extensions\\6.0.0\\system.resources.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -8,7 +8,6 @@ using MvkServer.Item.List;
 using MvkServer.Network;
 using MvkServer.Network.Packets.Client;
 using MvkServer.Network.Packets.Server;
-using MvkServer.Sound;
 using MvkServer.Util;
 using MvkServer.World.Block;
 using System.Collections;
@@ -244,7 +243,7 @@ namespace MvkClient.Network
                 EntityLiving entity = ClientMain.World.GetEntityLivingByID(packet.GetEntityId());
                 if (entity == null) entity = ClientMain.Player;
 
-                ClientMain.Sample.PlaySound(AssetsSample.MobChickenPlop, .2f);
+                ClientMain.Sample.PlaySound(MvkServer.Sound.AssetsSample.MobChickenPlop, .2f);
                 // HACK::2022-04-04 надо как-то вынести в игровой поток, а то ошибка вылетает
                 ClientMain.World.RemoveEntityFromWorld(packet.GetItemId());
             }

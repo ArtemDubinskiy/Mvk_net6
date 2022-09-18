@@ -1,189 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E573DAAA-6AA0-4D0C-979C-57F4CD9D7174}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MvkClient</RootNamespace>
-    <AssemblyName>MvkClient</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
-  </PropertyGroup>
-  <PropertyGroup>
-    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="NVorbis, Version=0.10.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NVorbis.0.10.4\lib\net45\NVorbis.dll</HintPath>
-    </Reference>
-    <Reference Include="SharpGL, Version=3.1.1.0, Culture=neutral, PublicKeyToken=27fc851303210b27, processorArchitecture=MSIL">
-      <HintPath>..\packages\SharpGL.3.1.1\lib\net45\SharpGL.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Buffers, Version=4.0.2.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Buffers.4.4.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Memory.4.5.3\lib\netstandard1.1\System.Memory.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard1.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
-      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
-    </Reference>
+    <PackageReference Include="NVorbis" Version="0.10.4" />
+    <PackageReference Include="SharpGL" Version="3.1.1" />
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
   </ItemGroup>
+
   <ItemGroup>
-    <Compile Include="Actions\Keyboard.cs" />
-    <Compile Include="Actions\MouseButton.cs" />
-    <Compile Include="Audio\Al.cs" />
-    <Compile Include="Audio\Alc.cs" />
-    <Compile Include="Audio\AudioBase.cs" />
-    <Compile Include="Audio\AudioSample.cs" />
-    <Compile Include="Audio\AudioSource.cs" />
-    <Compile Include="Audio\AudioSources.cs" />
-    <Compile Include="Client.cs" />
-    <Compile Include="Debug.cs" />
-    <Compile Include="Entity\EntityPlayerClient.cs" />
-    <Compile Include="Entity\EntityPlayerMP.cs" />
-    <Compile Include="Entity\EntityPlayerSP.cs" />
-    <Compile Include="Entity\EnumViewCamera.cs" />
-    <Compile Include="Entity\Particle\EntitySuspendFX.cs" />
-    <Compile Include="Entity\Particle\EntitySmokeFX.cs" />
-    <Compile Include="Entity\Particle\EntityBubbleFX.cs" />
-    <Compile Include="Entity\Particle\EntityTestFX.cs" />
-    <Compile Include="Entity\Particle\EntityDiggingFX.cs" />
-    <Compile Include="Entity\Particle\EntityFX.cs" />
-    <Compile Include="Gui\EnumAlight.cs" />
-    <Compile Include="Gui\Label.cs" />
-    <Compile Include="Gui\Control.cs" />
-    <Compile Include="Gui\EnumBackground.cs" />
-    <Compile Include="Gui\EnumScreenKey.cs" />
-    <Compile Include="Gui\GuiScreen.cs" />
-    <Compile Include="Gui\ScreenGameOver.cs" />
-    <Compile Include="Gui\ScreenInGame.cs" />
-    <Compile Include="Gui\ScreenInGameMenu.cs" />
-    <Compile Include="Gui\ScreenLoading.cs" />
-    <Compile Include="Gui\ScreenMultiplayer.cs" />
-    <Compile Include="Gui\ScreenWorldLoading.cs" />
-    <Compile Include="Gui\ScreenMainMenu.cs" />
-    <Compile Include="Gui\Button.cs" />
-    <Compile Include="Gui\Screen.cs" />
-    <Compile Include="Gui\ScreenProcess.cs" />
-    <Compile Include="Gui\ScreenError.cs" />
-    <Compile Include="Gui\ScreenYesNo.cs" />
-    <Compile Include="Gui\ScreenSingle.cs" />
-    <Compile Include="Gui\ScreenOptions.cs" />
-    <Compile Include="Gui\Slider.cs" />
-    <Compile Include="Gui\TextBox.cs" />
-    <Compile Include="Loading.cs" />
-    <Compile Include="Network\ProcessClientPackets.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Renderer\Block\BlockAlphaRender.cs" />
-    <Compile Include="Renderer\Block\BlockColorBiome.cs" />
-    <Compile Include="Renderer\Block\BlockGuiRender.cs" />
-    <Compile Include="Renderer\Block\BlockSide.cs" />
-    <Compile Include="Renderer\Block\BlockFaceUV.cs" />
-    <Compile Include="Renderer\Block\BlockRender.cs" />
-    <Compile Include="Renderer\Block\BlockBuffer.cs" />
-    <Compile Include="Renderer\Block\BlockVertex.cs" />
-    <Compile Include="Renderer\Chunk\ChunkMesh.cs" />
-    <Compile Include="Renderer\Chunk\ChunkRender.cs" />
-    <Compile Include="Renderer\EffectRenderer.cs" />
-    <Compile Include="Renderer\Entity\Layers\ILayerRenderer.cs" />
-    <Compile Include="Renderer\Entity\Layers\LayerHeldItem.cs" />
-    <Compile Include="Renderer\Entity\RenderEntityBase.cs" />
-    <Compile Include="Renderer\Entity\RenderEntityBlock.cs" />
-    <Compile Include="Renderer\Entity\RenderEntityItem.cs" />
-    <Compile Include="Renderer\Entity\RendererLivingEntity.cs" />
-    <Compile Include="Renderer\Entity\RenderItem.cs" />
-    <Compile Include="Renderer\Entity\RenderManager.cs" />
-    <Compile Include="Renderer\Entity\RenderChicken.cs" />
-    <Compile Include="Renderer\Entity\RenderHead.cs" />
-    <Compile Include="Renderer\Entity\RenderPlayer.cs" />
-    <Compile Include="Renderer\Model\ModelBase.cs" />
-    <Compile Include="Renderer\Model\ModelBox.cs" />
-    <Compile Include="Renderer\Model\ModelChicken.cs" />
-    <Compile Include="Renderer\Model\ModelPlayerHand.cs" />
-    <Compile Include="Renderer\Model\ModelPlayer.cs" />
-    <Compile Include="Renderer\Model\ModelRender.cs" />
-    <Compile Include="Renderer\Model\TexturedQuad.cs" />
-    <Compile Include="Renderer\Model\TextureVertex.cs" />
-    <Compile Include="Renderer\RenderBlockGui.cs" />
-    <Compile Include="Renderer\RenderChunkCursor.cs" />
-    <Compile Include="Renderer\RenderDL.cs" />
-    <Compile Include="Renderer\Font\FontAdvance.cs" />
-    <Compile Include="Renderer\Font\FontRenderer.cs" />
-    <Compile Include="Renderer\Font\Symbol.cs" />
-    <Compile Include="Renderer\GLRender.cs" />
-    <Compile Include="Renderer\GLWindow.cs" />
-    <Compile Include="Gui\ScreenBeginLoading.cs" />
-    <Compile Include="Renderer\RenderBlockCursor.cs" />
-    <Compile Include="Renderer\Shaders\ShaderItems.cs" />
-    <Compile Include="Renderer\Shaders\ShaderVE.cs" />
-    <Compile Include="Renderer\Shaders\ShaderVoxel.cs" />
-    <Compile Include="Renderer\TextureLightMap.cs" />
-    <Compile Include="Renderer\TextureMap.cs" />
-    <Compile Include="Renderer\TextureStruct.cs" />
-    <Compile Include="Renderer\WorldRenderer.cs" />
-    <Compile Include="Setitings\Setting.cs" />
-    <Compile Include="LocalServer.cs" />
-    <Compile Include="Util\BufImage.cs" />
-    <Compile Include="Util\BufferedImage.cs" />
-    <Compile Include="Gui\ScreenEvent.cs" />
-    <Compile Include="Util\BufferData.cs" />
-    <Compile Include="Util\ByteBuffer.cs" />
-    <Compile Include="Util\CursorEvent.cs" />
-    <Compile Include="Util\CursorExtensions.cs" />
-    <Compile Include="Util\DestroyBlockProgress.cs" />
-    <Compile Include="Util\Frustum.cs" />
-    <Compile Include="Util\FrustumStruct.cs" />
-    <Compile Include="Util\ObjectKeyEvent.cs" />
-    <Compile Include="Util\Ticker.cs" />
-    <Compile Include="World\ChunkProviderClient.cs" />
-    <Compile Include="World\ChunkQueue.cs" />
-    <Compile Include="World\ListSingleWorld.cs" />
-    <Compile Include="World\WorldClient.cs" />
+    <ProjectReference Include="..\MvkAssets\MvkAssets.csproj" />
+    <ProjectReference Include="..\MvkServer\MvkServer.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MvkAssets\MvkAssets.csproj">
-      <Project>{d0236973-b369-4ccb-9205-789a3758071b}</Project>
-      <Name>MvkAssets</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\MvkServer\MvkServer.csproj">
-      <Project>{5302d908-7001-4eb3-9cb6-16adcdce23ac}</Project>
-      <Name>MvkServer</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+
 </Project>

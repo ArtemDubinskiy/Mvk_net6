@@ -12,9 +12,6 @@ using MvkServer.Util;
 using MvkServer.World;
 using MvkServer.World.Block;
 using SharpGL;
-using System;
-using System.Collections.Generic;
-using System.Threading;
 
 namespace MvkClient.Renderer
 {

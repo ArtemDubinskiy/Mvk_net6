@@ -39,7 +39,7 @@ namespace MvkClient.Audio
         /// <summary>
         /// Загрузка сэмпла
         /// </summary>
-        public void InitializeSample(AssetsSample key)
+        public void InitializeSample(MvkServer.Sound.AssetsSample key)
         {
             byte[] vs = Assets.GetSample(key.ToString());
             AudioSample sample = new AudioSample();
@@ -59,7 +59,7 @@ namespace MvkClient.Audio
         /// <summary>
         /// Проиграть звук
         /// </summary>
-        public void PlaySound(AssetsSample key, vec3 pos, float volume, float pitch)
+        public void PlaySound(MvkServer.Sound.AssetsSample key, vec3 pos, float volume, float pitch)
         {
             if (Setting.SoundVolume > 0 && items.Contains(key))
             {
@@ -78,16 +78,16 @@ namespace MvkClient.Audio
         /// <summary>
         /// Проиграть звук
         /// </summary>
-        public void PlaySound(AssetsSample key) => PlaySound(key, new vec3(0), 1f, 1f);
+        public void PlaySound(  MvkServer.Sound.AssetsSample key) => PlaySound(key, new vec3(0), 1f, 1f);
         /// <summary>
         /// Проиграть звук
         /// </summary>
-        public void PlaySound(AssetsSample key, float volume) => PlaySound(key, new vec3(0), volume, 1f);
+        public void PlaySound(MvkServer.Sound.AssetsSample key, float volume) => PlaySound(key, new vec3(0), volume, 1f);
 
         /// <summary>
         /// Добавить или изменить сэмпл
         /// </summary>
-        protected void Set(AssetsSample key, AudioSample sample)
+        protected void Set(MvkServer.Sound.AssetsSample key, AudioSample sample)
         {
             if (items.ContainsKey(key))
             {
@@ -102,6 +102,6 @@ namespace MvkClient.Audio
         /// <summary>
         /// Получить сэмпл по ключу
         /// </summary>
-        protected AudioSample Get(AssetsSample key) => items.ContainsKey(key) ? items[key] as AudioSample : null;
+        protected AudioSample Get(MvkServer.Sound.AssetsSample key) => items.ContainsKey(key) ? items[key] as AudioSample : null;
     }
 }

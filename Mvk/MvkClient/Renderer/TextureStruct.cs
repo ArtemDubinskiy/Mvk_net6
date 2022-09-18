@@ -5,7 +5,7 @@ namespace MvkClient.Renderer
     /// <summary>
     /// Структура для информации о текстуре
     /// </summary>
-    public struct TextureStruct
+    public readonly struct TextureStruct
     {
         private readonly uint key;
         private readonly int width;

@@ -915,14 +915,14 @@ namespace MvkServer.Entity
             limbSwingAmountPrev = LimbSwingAmount;
             float xx = Position.x - PositionPrev.x;
             float zz = Position.z - PositionPrev.z;
-            float xxzz = xx * xx + zz * zz;
+            float xxzz = (xx * xx + zz * zz);
             float qxxzz = Mth.Sqrt(xxzz);
             float xz = qxxzz * 1.4f;
-            if (xz > 1.0f) xz = 1.0f;
+            if (xz > 1.0f) xz = 1f;
             LimbSwingAmount += (xz - LimbSwingAmount) * 0.4f;
             LimbSwing += LimbSwingAmount;
 
-            distanceWalkedOnStepModified += qxxzz * .3f;
+            distanceWalkedOnStepModified += qxxzz * 0.3f;
             if (distanceWalkedOnStepModified > nextStepDistance)
             {
                 BlockBase blockDown = World.GetBlockState(new BlockPos(Position.x, Position.y - 0.20002f, Position.z)).GetBlock();

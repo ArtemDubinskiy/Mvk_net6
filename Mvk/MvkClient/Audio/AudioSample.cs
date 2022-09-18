@@ -1,6 +1,6 @@
-﻿using NVorbis;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
+using NVorbis;
 
 namespace MvkClient.Audio
 {

@@ -1,6 +1,7 @@
 ﻿using MvkServer.Glm;
 using MvkServer.Util;
 using SharpGL;
+using System.Runtime.ExceptionServices;
 
 namespace MvkClient.Renderer
 {
@@ -116,10 +117,26 @@ namespace MvkClient.Renderer
         /// <summary>
         /// Удалить лист
         /// </summary>
-        public static void ListDelete(uint list) => gl.DeleteLists(list, 1);
+
+        [Obsolete("Obsolete")]
+        public static void ListDelete(uint list)
+        {
+           // try
+            {
+                gl.DeleteLists(list, 1);
+                //TODO: Если собирать проект в режиме DEBUG то происходит исключение при входе в мир, Release исключение не прилетает 
+                //System.AccessViolationException: "Attempted to read or write protected memory. This is often an indication that other memory is corrupt."
+                //В планах прикрутить к проекту иходник SharpGL, и посмотреть где именно
+            }
+            //catch (AccessViolationException e)
+            {
+                
+            }
+
+        }
         /// <summary>
-        /// Видим обратную сторону полигона
-        /// </summary>
+         /// Видим обратную сторону полигона
+         /// </summary>
         public static void CullDisable() => gl.Disable(OpenGL.GL_CULL_FACE);
         /// <summary>
         /// Видим только лицевую сторону полигона
@@ -207,15 +224,13 @@ namespace MvkClient.Renderer
 
 
 
-        
+
         /// <summary>
         /// Смещение яркости, по текстуре освещения
         /// </summary>
         /// <param name="uv">x = sky, y = block</param>
-        public static void LightmapTextureCoords(vec2 uv)
-        {
-            gl.MultiTexCoord2(OpenGL.GL_TEXTURE1, uv.x, uv.y);
-        }
+        [Obsolete]
+        public static void LightmapTextureCoords(vec2 uv) => gl.MultiTexCoord2(OpenGL.GL_TEXTURE1, uv.x, uv.y);
 
         /// <summary>
         /// Активировать мульти текстуру освещения

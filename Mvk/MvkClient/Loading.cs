@@ -1,8 +1,6 @@
 ﻿using MvkAssets;
 using MvkClient.Setitings;
 using MvkClient.Util;
-using MvkServer.Sound;
-using System;
 
 namespace MvkClient
 {
@@ -37,7 +35,7 @@ namespace MvkClient
         /// </summary>
         public void LoadStart()
         {
-            System.Threading.Tasks.Task.Factory.StartNew(() =>
+            Task.Factory.StartNew(() =>
             {
                 // Опции
                 Setting.Load();
@@ -45,7 +43,7 @@ namespace MvkClient
                 OnTick(new ObjectKeyEventArgs(ObjectKey.LoadStep));
 
                 // Загрузка семплов
-                foreach (AssetsSample key in Enum.GetValues(typeof(AssetsSample)))
+                foreach (MvkServer.Sound.AssetsSample key in Enum.GetValues(typeof(MvkServer.Sound.AssetsSample)))
                 {
                     client.Sample.InitializeSample(key);
                     OnTick(new ObjectKeyEventArgs(ObjectKey.LoadStep));

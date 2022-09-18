@@ -80,7 +80,8 @@ namespace MvkClient.Renderer
             {
                 DrawBegin();
                 // тут мир
-                if (client.World != null)
+                //
+                if (client.World != null) 
                 {
                     // коэффициент интерполяции
                     float timeIndex = client.World.Interpolation();

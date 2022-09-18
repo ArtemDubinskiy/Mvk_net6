@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace MvkClient.Audio
+﻿namespace MvkClient.Audio
 {
     /// <summary>
     /// Объект источкиков звука

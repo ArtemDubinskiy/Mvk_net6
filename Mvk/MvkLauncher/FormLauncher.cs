@@ -1,4 +1,4 @@
-п»їusing MvkClient;
+using MvkClient;
 using MvkClient.Actions;
 using MvkClient.Util;
 using SharpGL;
@@ -11,7 +11,6 @@ namespace MvkLauncher
     public partial class FormLauncher : Form
     {
         protected Client client = new Client();
-
         public FormLauncher()
         {
             client.Initialize();
@@ -23,12 +22,13 @@ namespace MvkLauncher
             client.CursorClipBounds += Client_CursorClipBounds;
         }
 
+
+
         private void Client_CursorClipBounds(object sender, CursorEventArgs e)
         {
             if (InvokeRequired) Invoke(new CursorEventHandler(Client_CursorClipBounds), sender, e);
             else Cursor.Clip = e.IsBounds ? Bounds : Rectangle.Empty;
         }
-
         private void Client_ThreadSend(object sender, ObjectKeyEventArgs e)
         {
             if (InvokeRequired) Invoke(new ObjectKeyEventHandler(Client_ThreadSend), sender, e);
@@ -48,110 +48,70 @@ namespace MvkLauncher
         }
 
         #region Form
+        /// <summary>
+        /// Деактивация окна
+        /// </summary>
+        private void FormLauncher_Deactivate(object sender, EventArgs e) => client.WindowDeactivate();
 
         /// <summary>
-        /// Р—Р°РіСЂСѓР·РєР° С„РѕСЂРјС‹
+        /// Окно закрыто
+        /// </summary>
+        private void FormLauncher_FormClosed(object sender, FormClosedEventArgs e) => WinApi.TimeEndPeriod(1);
+        private void openGLControl1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        /// <summary>
+        /// Начало закрытия окна
+        /// </summary>
+        private void FormLauncher_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (client.WindowClosing())
+            {
+                e.Cancel = true;
+            }
+        }
+
+        /// <summary>
+        /// Загрузка формы
         /// </summary>
         private void FormLauncher_Load(object sender, EventArgs e)
         {
             WinApi.TimeBeginPeriod(1);
             client.WindowLoad();
         }
-        /// <summary>
-        /// РќР°С‡Р°Р»Рѕ Р·Р°РєСЂС‹С‚РёСЏ РѕРєРЅР°
-        /// </summary>
-        private void FormLauncher_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (client.WindowClosing()) 
-            {
-                e.Cancel = true;
-            }
-        }
-        /// <summary>
-        /// РћРєРЅРѕ Р·Р°РєСЂС‹С‚Рѕ
-        /// </summary>
-        private void FormLauncher_FormClosed(object sender, FormClosedEventArgs e) => WinApi.TimeEndPeriod(1);
-        /// <summary>
-        /// Р”РµР°РєС‚РёРІР°С†РёСЏ РѕРєРЅР°
-        /// </summary>
-        private void FormLauncher_Deactivate(object sender, EventArgs e) => client.WindowDeactivate();
 
         #endregion
-
-        #region OpenGLControl
 
         private void OpenGLControl1_Enter(object sender, EventArgs e) => client.WindowGLEnter();
 
-        /// <summary>
-        /// РРЅРёС†РёР°Р»РёР·РёСЂРѕРІР°С‚СЊ, РїРµСЂРІС‹Р№ Р·Р°РїСѓСЃРє OpenGL
-        /// </summary>
-        private void OpenGLControl1_OpenGLInitialized(object sender, EventArgs e) => client.GLInitialize(openGLControl1.OpenGL);
-        /// <summary>
-        /// РџСЂРѕСЂРёСЃРѕРІРєР° РєР°Р¶РґРѕРіРѕ РєР°РґСЂР°
-        /// </summary>
-        private void OpenGLControl1_OpenGLDraw(object sender, RenderEventArgs args) => client.GLDraw();
-        /// <summary>
-        /// РР·РјРµРЅС‘РЅ СЂР°Р·РјРµСЂ РѕРєРЅР°
-        /// </summary>
-        private void OpenGLControl1_Resized(object sender, EventArgs e) 
-            => client.GLResized(openGLControl1.Size.Width, openGLControl1.Size.Height);
 
         /// <summary>
-        /// РќР°Р¶Р°С‚Р° РєР»Р°РІРёС€Р°
+        /// Нажата клавиша
         /// </summary>
-        private void OpenGLControl1_KeyDown(object sender, KeyEventArgs e) { }// => client.KeyDown(e.KeyValue);
+        private void OpenGLControl1_KeyDown(object sender, KeyEventArgs e) { }//
+
         /// <summary>
-        /// РћС‚РїСѓС‰РµРЅР° РєР»Р°РІРёС€Р°
+        /// Нажата клавиша в char формате
+        /// </summary>
+        private void OpenGLControl1_KeyPress(object sender, KeyPressEventArgs e) => client.KeyPress(e.KeyChar);
+
+        /// <summary>
+        /// Отпущена клавиша
         /// </summary>
         private void OpenGLControl1_KeyUp(object sender, KeyEventArgs e) => client.KeyUp(e.Alt ? 18 : e.KeyValue);
-        /// <summary>
-        /// РќР°Р¶Р°С‚Р° СЃРїРµС†РёР°Р»СЊРЅР°СЏ РєР»Р°РІРёС€Р°
-        /// </summary>
-        private void OpenGLControl1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e) => client.KeyDown(e.Alt ? 18 : e.KeyValue);
-        /// <summary>
-        /// РќР°Р¶Р°С‚Р° РєР»Р°РІРёС€Р° РІ char С„РѕСЂРјР°С‚Рµ
-        /// </summary>
-        private void openGLControl1_KeyPress(object sender, KeyPressEventArgs e) => client.KeyPress(e.KeyChar);
+
 
         /// <summary>
-        /// РќР°Р¶Р°С‚РёРµ РєР»Р°РІРёС€Рё РјС‹С€РєРё
+        /// Нажатие клавиши мышки
         /// </summary>
         private void OpenGLControl1_MouseDown(object sender, MouseEventArgs e)
             => client.MouseDown(ConvertMouseButton(e.Button), e.X, e.Y);
-        /// <summary>
-        /// РћС‚РїСѓС‰РµРЅР° РєР»Р°РІРёС€Р° РјС‹С€РєРё
-        /// </summary>
-        private void OpenGLControl1_MouseUp(object sender, MouseEventArgs e)
-            => client.MouseUp(ConvertMouseButton(e.Button), e.X, e.Y);
-        /// <summary>
-        /// Р’СЂР°С‰РµРЅРёРµ РєРѕР»С‘СЃРёРєР°
-        /// </summary>
-        private void OpenGLControl1_MouseWheel(object sender, MouseEventArgs e)
-            => client.MouseWheel(e.Delta, e.X, e.Y);
-        /// <summary>
-        /// Р”РІРёР¶РµРЅРёРµ РјС‹С€РєРё
-        /// </summary>
-        private void OpenGLControl1_MouseMove(object sender, MouseEventArgs e)
-        {
-            // РљРѕРѕСЂРґРёРЅР°С‚Р° С†РµРЅС‚СЂР° РєСѓСЂСЃРѕСЂР°
-            Point point = new Point(Bounds.Width / 2 + Bounds.X, Bounds.Height / 2 + Bounds.Y);
-            int deltaX = MousePosition.X - point.X;
-            int deltaY = MousePosition.Y - point.Y;
-            if (client.MouseMove(e.X, e.Y, deltaX, deltaY))
-            {
-                // РџРµСЂРµРјРµС‰Р°РµРј РєСѓСЂСЃРѕСЂ РІ С†РµРЅС‚СЂ
-                Cursor.Position = point;
-            }
-        }
 
-        #endregion
-
-        /// <summary>
-        /// РљРѕРЅРІРµСЂС‚ РЅР°Р¶Р°С‚РёРµ РєР»Р°РІРёС€Рё РјС‹С€РєРё
-        /// </summary>
         protected MouseButton ConvertMouseButton(MouseButtons button)
         {
-            switch(button)
+            switch (button)
             {
                 case MouseButtons.Left: return MouseButton.Left;
                 case MouseButtons.Right: return MouseButton.Right;
@@ -159,5 +119,53 @@ namespace MvkLauncher
             }
             return MouseButton.None;
         }
+
+        /// <summary>
+        /// Движение мышки
+        /// </summary>
+        private void OpenGLControl1_MouseMove(object sender, MouseEventArgs e)
+        {
+            // Координата центра курсора
+            Point point = new Point(Bounds.Width / 2 + Bounds.X, Bounds.Height / 2 + Bounds.Y);
+            int deltaX = MousePosition.X - point.X;
+            int deltaY = MousePosition.Y - point.Y;
+            if (client.MouseMove(e.X, e.Y, deltaX, deltaY))
+            {
+                // Перемещаем курсор в центр
+                Cursor.Position = point;
+            }
+        }
+
+        /// <summary>
+        /// Отпущена клавиша мышки
+        /// </summary>
+        private void OpenGLControl1_MouseUp(object sender, MouseEventArgs e)
+            => client.MouseUp(ConvertMouseButton(e.Button), e.X, e.Y);
+
+        // <summary>
+        /// Прорисовка каждого кадра
+        /// </summary>
+        private void OpenGLControl1_OpenGLDraw(object sender, RenderEventArgs args) => client.GLDraw();
+
+        /// <summary>
+        /// Инициализировать, первый запуск OpenGL
+        /// </summary>
+        private void OpenGLControl1_OpenGLInitialized(object sender, EventArgs e) => client.GLInitialize(openGLControl1.OpenGL);
+
+        /// <summary>
+        /// Нажата специальная клавиша
+        /// </summary>
+        private void OpenGLControl1_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e) => client.KeyDown(e.Alt ? 18 : e.KeyValue);
+
+        /// <summary>
+        /// Вращение колёсика
+        /// </summary>
+        private void OpenGLControl1_MouseWheel(object sender, MouseEventArgs e)
+            => client.MouseWheel(e.Delta, e.X, e.Y);
+
+        private void OpenGLControl1_Resized(object sender, EventArgs e)
+           => client.GLResized(openGLControl1.Size.Width, openGLControl1.Size.Height);
+
+
     }
 }

@@ -1,0 +1,10 @@
+[14:49:57] server.runing slot=3
+[14:49:57] server.player.entry Ant [938db156ad9b67fa1d4276ac67649940]
+[14:49:57] server.threadGenLoop.run
+[14:49:57] server.runed
+[14:50:09] server.threadGenLoop.stop
+[14:50:09] server.stoping
+[14:50:09] server.saving.worlds
+[14:50:09] server.saving.chunk all count:1849 save count:6
+[14:50:09] server.player.entry.repeat Ant [938db156ad9b67fa1d4276ac67649940]
+[14:50:09] server.stoped

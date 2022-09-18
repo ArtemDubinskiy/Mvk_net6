@@ -1011,7 +1011,7 @@ namespace MvkServer.World.Chunk
             for (int i = 0; i < 256; i++) biomes[i] = (byte)biome[i];
             nbt.SetByteArray("Biomes", biomes);
 
-            TagList tagList = new TagList();
+            MvkServer.NBT.TagList tagList = new MvkServer.NBT.TagList();
             
             for (int ys = 0; ys < COUNT_HEIGHT; ys++)
             {
@@ -1039,7 +1039,7 @@ namespace MvkServer.World.Chunk
             byte[] biomes = nbt.GetByteArray("Biomes");
             for (int i = 0; i < 256; i++) biome[i] = (EnumBiome)biomes[i];
 
-            TagList tagList = nbt.GetTagList("Sections", 10);
+            MvkServer.NBT.TagList tagList = nbt.GetTagList("Sections", 10);
             int count = tagList.TagCount();
             if (tagList.GetTagType() == 10)
             {
