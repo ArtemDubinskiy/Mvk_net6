@@ -54,3 +54,6 @@ C:\Users\artem\Source\Repos\ArtemDubinskiy\Mvk_net_6\Mvk\MvkLauncher\obj\Debug\n
 C:\Users\artem\Source\Repos\ArtemDubinskiy\Mvk_net_6\Mvk\MvkLauncher\obj\Debug\net6.0-windows\MvkLauncher.pdb
 C:\Users\artem\Source\Repos\ArtemDubinskiy\Mvk_net_6\Mvk\MvkLauncher\obj\Debug\net6.0-windows\MvkLauncher.genruntimeconfig.cache
 C:\Users\artem\Source\Repos\ArtemDubinskiy\Mvk_net_6\Mvk\MvkLauncher\obj\Debug\net6.0-windows\ref\MvkLauncher.dll
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\MvkLauncher\bin\Debug\net6.0-windows\SharpGL.WinForms.pdb
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\MvkLauncher\bin\Debug\net6.0-windows\SharpGL.pdb
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\MvkLauncher\bin\Debug\net6.0-windows\SharpGL.SceneGraph.pdb

@@ -1,4 +1,5 @@
-﻿namespace MvkLauncher
+﻿
+namespace MvkLauncher
 {
     partial class FormLauncher
     {

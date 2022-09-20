@@ -29,3 +29,5 @@ C:\Users\artem\Source\Repos\ArtemDubinskiy\Mvk_net_6\Mvk\MvkClient\obj\Release\n
 C:\Users\artem\Source\Repos\ArtemDubinskiy\Mvk_net_6\Mvk\MvkClient\obj\Release\net6.0\refint\MvkClient.dll
 C:\Users\artem\Source\Repos\ArtemDubinskiy\Mvk_net_6\Mvk\MvkClient\obj\Release\net6.0\MvkClient.pdb
 C:\Users\artem\Source\Repos\ArtemDubinskiy\Mvk_net_6\Mvk\MvkClient\obj\Release\net6.0\ref\MvkClient.dll
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\MvkClient\bin\Release\net6.0\SharpGL.dll
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\MvkClient\bin\Release\net6.0\SharpGL.pdb

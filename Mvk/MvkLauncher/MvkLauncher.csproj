@@ -10,12 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="SharpGL" Version="3.1.1" />
-    <PackageReference Include="SharpGL.WinForms" Version="3.1.1" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\MvkClient\MvkClient.csproj" />
+    <ProjectReference Include="..\SharpGL.WinForms\SharpGL.WinForms.csproj" />
+    <ProjectReference Include="..\SharpGL\SharpGL.csproj" />
   </ItemGroup>
 
 </Project>

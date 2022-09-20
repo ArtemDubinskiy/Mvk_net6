@@ -11,7 +11,7 @@
           "MvkAssets": "1.0.0",
           "MvkServer": "1.0.0",
           "NVorbis": "0.10.4",
-          "SharpGL": "3.1.1",
+          "SharpGL": "1.0.0",
           "System.Drawing.Common": "6.0.0"
         },
         "runtime": {
@@ -43,14 +43,6 @@
           "lib/netstandard2.0/NVorbis.dll": {
             "assemblyVersion": "0.10.4.0",
             "fileVersion": "0.10.4.0"
-          }
-        }
-      },
-      "SharpGL/3.1.1": {
-        "runtime": {
-          "lib/netcoreapp3.1/SharpGL.dll": {
-            "assemblyVersion": "3.1.1.0",
-            "fileVersion": "3.1.1.0"
           }
         }
       },
@@ -102,6 +94,11 @@
         "runtime": {
           "MvkServer.dll": {}
         }
+      },
+      "SharpGL/1.0.0": {
+        "runtime": {
+          "SharpGL.dll": {}
+        }
       }
     }
   },
@@ -124,13 +121,6 @@
       "sha512": "sha512-WYnil3DhQHzjCY0dM9I2B3r1vWip90AOuQd25KE4NrjPQBg0tBJFluRLm5YPnO5ZLDmwrfosY8jCQGQRmWI/Pg==",
       "path": "nvorbis/0.10.4",
       "hashPath": "nvorbis.0.10.4.nupkg.sha512"
-    },
-    "SharpGL/3.1.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-tLTsMAl0XMjLhVK++ga65tObn/8IyPEfZ9i+icELcAPJ92mgB/DllVlfDBNJOP5T3C4GuT6YEZn3CVR11GH2qQ==",
-      "path": "sharpgl/3.1.1",
-      "hashPath": "sharpgl.3.1.1.nupkg.sha512"
     },
     "System.Drawing.Common/6.0.0": {
       "type": "package",
@@ -166,6 +156,11 @@
       "sha512": ""
     },
     "MvkServer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SharpGL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

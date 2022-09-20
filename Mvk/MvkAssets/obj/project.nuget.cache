@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PicM9+CgSjfxwMDjEUD+5Dcyb7t5vhoPuFYJjjbltiog1fxDe9Xv8nVQa2Pl1uC4DroIYPY3RDB3YAacdPAAgw==",
+  "dgSpecHash": "5OMWvxQllYoyGYMwIkpbrhXjVMsA0duJIcB7M9/dJRPWi5lpShTQHMKMAyAqgrg7wpQlnZOKTIDQRSKRjsAHDQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\artem\\Source\\Repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkAssets\\MvkAssets.csproj",
+  "projectFilePath": "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkAssets\\MvkAssets.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\artem\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",

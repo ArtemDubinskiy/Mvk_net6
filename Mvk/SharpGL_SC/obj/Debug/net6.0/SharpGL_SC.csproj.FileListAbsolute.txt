@@ -1,0 +1,12 @@
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL_SC\bin\Debug\net6.0\SharpGL_SC.deps.json
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL_SC\bin\Debug\net6.0\SharpGL_SC.dll
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL_SC\bin\Debug\net6.0\SharpGL_SC.pdb
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL_SC\obj\Debug\net6.0\SharpGL_SC.csproj.AssemblyReference.cache
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL_SC\obj\Debug\net6.0\SharpGL_SC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL_SC\obj\Debug\net6.0\SharpGL_SC.AssemblyInfoInputs.cache
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL_SC\obj\Debug\net6.0\SharpGL_SC.AssemblyInfo.cs
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL_SC\obj\Debug\net6.0\SharpGL_SC.csproj.CoreCompileInputs.cache
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL_SC\obj\Debug\net6.0\SharpGL_SC.dll
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL_SC\obj\Debug\net6.0\refint\SharpGL_SC.dll
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL_SC\obj\Debug\net6.0\SharpGL_SC.pdb
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL_SC\obj\Debug\net6.0\ref\SharpGL_SC.dll

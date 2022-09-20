@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Mvk"
+    "\\Mvk",
+    "\\Mvk\\MvkLauncher"
   ],
-  "SelectedNode": "\\Mvk\\Mvk.sln",
+  "SelectedNode": "\\Mvk\\MvkLauncher\\MvkLauncher.csproj",
   "PreviewInSolutionExplorer": false
 }

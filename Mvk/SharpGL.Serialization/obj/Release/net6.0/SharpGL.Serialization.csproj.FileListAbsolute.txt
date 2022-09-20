@@ -1,0 +1,17 @@
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.Serialization\obj\Release\net6.0\SharpGL.Serialization.csproj.AssemblyReference.cache
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.Serialization\obj\Release\net6.0\SharpGL.Serialization.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.Serialization\obj\Release\net6.0\SharpGL.Serialization.AssemblyInfoInputs.cache
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.Serialization\obj\Release\net6.0\SharpGL.Serialization.AssemblyInfo.cs
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.Serialization\obj\Release\net6.0\SharpGL.Serialization.csproj.CoreCompileInputs.cache
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.Serialization\bin\Release\net6.0\SharpGL.Serialization.deps.json
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.Serialization\bin\Release\net6.0\SharpGL.Serialization.dll
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.Serialization\bin\Release\net6.0\SharpGL.Serialization.pdb
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.Serialization\bin\Release\net6.0\SharpGL.dll
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.Serialization\bin\Release\net6.0\SharpGL.SceneGraph.dll
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.Serialization\bin\Release\net6.0\SharpGL.SceneGraph.pdb
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.Serialization\bin\Release\net6.0\SharpGL.pdb
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.Serialization\obj\Release\net6.0\SharpGL.Serialization.csproj.CopyComplete
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.Serialization\obj\Release\net6.0\SharpGL.Serialization.dll
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.Serialization\obj\Release\net6.0\refint\SharpGL.Serialization.dll
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.Serialization\obj\Release\net6.0\SharpGL.Serialization.pdb
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.Serialization\obj\Release\net6.0\ref\SharpGL.Serialization.dll

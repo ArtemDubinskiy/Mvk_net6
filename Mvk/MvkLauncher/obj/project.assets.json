@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     "net6.0-windows7.0": {
-      "Microsoft.CSharp/4.7.0": {
-        "type": "package",
-        "compile": {
-          "ref/netcoreapp2.0/_._": {}
-        },
-        "runtime": {
-          "lib/netcoreapp2.0/_._": {}
-        }
-      },
       "Microsoft.Win32.SystemEvents/6.0.0": {
         "type": "package",
         "compile": {
@@ -47,70 +38,6 @@
         "runtime": {
           "lib/netstandard2.0/NVorbis.dll": {
             "related": ".xml"
-          }
-        }
-      },
-      "SharpGL/3.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp3.1/SharpGL.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/SharpGL.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "SharpGL.SceneGraph/3.1.1": {
-        "type": "package",
-        "dependencies": {
-          "SharpGL": "3.1.1",
-          "System.Drawing.Common": "4.7.0"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/SharpGL.SceneGraph.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/SharpGL.SceneGraph.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "SharpGL.WinForms/3.1.1": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.CSharp": "4.7.0",
-          "SharpGL": "3.1.1",
-          "SharpGL.SceneGraph": "3.1.1",
-          "System.Data.DataSetExtensions": "4.5.0"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/SharpGL.WinForms.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/SharpGL.WinForms.dll": {
-            "related": ".xml"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WindowsForms"
-        ],
-        "contentFiles": {
-          "contentFiles/any/netcoreapp3.1/SharpGL.ico": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
-          },
-          "contentFiles/any/netcoreapp3.1/SharpGL.png": {
-            "buildAction": "Content",
-            "codeLanguage": "any",
-            "copyToOutput": false
           }
         }
       },
@@ -207,7 +134,7 @@
           "MvkAssets": "1.0.0",
           "MvkServer": "1.0.0",
           "NVorbis": "0.10.4",
-          "SharpGL": "3.1.1",
+          "SharpGL": "1.0.0",
           "System.Drawing.Common": "6.0.0"
         },
         "compile": {
@@ -226,79 +153,52 @@
         "runtime": {
           "bin/placeholder/MvkServer.dll": {}
         }
+      },
+      "SharpGL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SharpGL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SharpGL.dll": {}
+        }
+      },
+      "SharpGL.SceneGraph/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpGL": "1.0.0",
+          "System.Drawing.Common": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SharpGL.SceneGraph.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SharpGL.SceneGraph.dll": {}
+        }
+      },
+      "SharpGL.WinForms/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "SharpGL": "1.0.0",
+          "SharpGL.SceneGraph": "1.0.0",
+          "System.Data.DataSetExtensions": "4.5.0"
+        },
+        "compile": {
+          "bin/placeholder/SharpGL.WinForms.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SharpGL.WinForms.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
       }
     }
   },
   "libraries": {
-    "Microsoft.CSharp/4.7.0": {
-      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
-      "type": "package",
-      "path": "microsoft.csharp/4.7.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net45/_._",
-        "lib/netcore50/Microsoft.CSharp.dll",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.3/Microsoft.CSharp.dll",
-        "lib/netstandard2.0/Microsoft.CSharp.dll",
-        "lib/netstandard2.0/Microsoft.CSharp.xml",
-        "lib/portable-net45+win8+wp8+wpa81/_._",
-        "lib/uap10.0.16299/_._",
-        "lib/win8/_._",
-        "lib/wp80/_._",
-        "lib/wpa81/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.7.0.nupkg.sha512",
-        "microsoft.csharp.nuspec",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/_._",
-        "ref/netcore50/Microsoft.CSharp.dll",
-        "ref/netcore50/Microsoft.CSharp.xml",
-        "ref/netcore50/de/Microsoft.CSharp.xml",
-        "ref/netcore50/es/Microsoft.CSharp.xml",
-        "ref/netcore50/fr/Microsoft.CSharp.xml",
-        "ref/netcore50/it/Microsoft.CSharp.xml",
-        "ref/netcore50/ja/Microsoft.CSharp.xml",
-        "ref/netcore50/ko/Microsoft.CSharp.xml",
-        "ref/netcore50/ru/Microsoft.CSharp.xml",
-        "ref/netcore50/zh-hans/Microsoft.CSharp.xml",
-        "ref/netcore50/zh-hant/Microsoft.CSharp.xml",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard1.0/Microsoft.CSharp.dll",
-        "ref/netstandard1.0/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/de/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/es/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/fr/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/it/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/ja/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/ko/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/ru/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/zh-hans/Microsoft.CSharp.xml",
-        "ref/netstandard1.0/zh-hant/Microsoft.CSharp.xml",
-        "ref/netstandard2.0/Microsoft.CSharp.dll",
-        "ref/netstandard2.0/Microsoft.CSharp.xml",
-        "ref/portable-net45+win8+wp8+wpa81/_._",
-        "ref/uap10.0.16299/_._",
-        "ref/win8/_._",
-        "ref/wp80/_._",
-        "ref/wpa81/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "Microsoft.Win32.SystemEvents/6.0.0": {
       "sha512": "hqTM5628jSsQiv+HGpiq3WKBl2c8v1KZfby2J6Pr7pEPlK9waPdgEO6b8A/+/xn/yZ9ulv8HuqK71ONy2tg67A==",
       "type": "package",
@@ -342,85 +242,6 @@
         "lib/netstandard2.0/NVorbis.xml",
         "nvorbis.0.10.4.nupkg.sha512",
         "nvorbis.nuspec"
-      ]
-    },
-    "SharpGL/3.1.1": {
-      "sha512": "tLTsMAl0XMjLhVK++ga65tObn/8IyPEfZ9i+icELcAPJ92mgB/DllVlfDBNJOP5T3C4GuT6YEZn3CVR11GH2qQ==",
-      "type": "package",
-      "path": "sharpgl/3.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/SharpGL.dll",
-        "lib/net40/SharpGL.xml",
-        "lib/net45/SharpGL.dll",
-        "lib/net45/SharpGL.xml",
-        "lib/net472/SharpGL.dll",
-        "lib/net472/SharpGL.xml",
-        "lib/netcoreapp2.0/SharpGL.dll",
-        "lib/netcoreapp2.0/SharpGL.xml",
-        "lib/netcoreapp3.0/SharpGL.dll",
-        "lib/netcoreapp3.0/SharpGL.xml",
-        "lib/netcoreapp3.1/SharpGL.dll",
-        "lib/netcoreapp3.1/SharpGL.xml",
-        "sharpgl.3.1.1.nupkg.sha512",
-        "sharpgl.nuspec"
-      ]
-    },
-    "SharpGL.SceneGraph/3.1.1": {
-      "sha512": "VY4SS/y8Ob8Mbi/oqh0lHA0SRCfRCeZ+/Kk8AM4EAw/vhHdpS1LEuVa0hVE3gA84tp3YFVmwXn8GjeLIA/VfmA==",
-      "type": "package",
-      "path": "sharpgl.scenegraph/3.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/SharpGL.SceneGraph.dll",
-        "lib/net40/SharpGL.SceneGraph.xml",
-        "lib/net45/SharpGL.SceneGraph.dll",
-        "lib/net45/SharpGL.SceneGraph.xml",
-        "lib/net472/SharpGL.SceneGraph.dll",
-        "lib/net472/SharpGL.SceneGraph.xml",
-        "lib/netcoreapp2.0/SharpGL.SceneGraph.dll",
-        "lib/netcoreapp2.0/SharpGL.SceneGraph.xml",
-        "lib/netcoreapp3.0/SharpGL.SceneGraph.dll",
-        "lib/netcoreapp3.0/SharpGL.SceneGraph.xml",
-        "lib/netcoreapp3.1/SharpGL.SceneGraph.dll",
-        "lib/netcoreapp3.1/SharpGL.SceneGraph.xml",
-        "sharpgl.scenegraph.3.1.1.nupkg.sha512",
-        "sharpgl.scenegraph.nuspec"
-      ]
-    },
-    "SharpGL.WinForms/3.1.1": {
-      "sha512": "n+4xnGkVPDRymxP4vPhtcPFw794KrESaXLIBCsDxuj//zx31SGmG1B53Y63x9cS1xlaH6KotHV1OV/MLvTKI0A==",
-      "type": "package",
-      "path": "sharpgl.winforms/3.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "content/SharpGL.ico",
-        "content/SharpGL.png",
-        "contentFiles/any/net40/SharpGL.ico",
-        "contentFiles/any/net40/SharpGL.png",
-        "contentFiles/any/net45/SharpGL.ico",
-        "contentFiles/any/net45/SharpGL.png",
-        "contentFiles/any/net472/SharpGL.ico",
-        "contentFiles/any/net472/SharpGL.png",
-        "contentFiles/any/netcoreapp3.0/SharpGL.ico",
-        "contentFiles/any/netcoreapp3.0/SharpGL.png",
-        "contentFiles/any/netcoreapp3.1/SharpGL.ico",
-        "contentFiles/any/netcoreapp3.1/SharpGL.png",
-        "lib/net40/SharpGL.WinForms.dll",
-        "lib/net40/SharpGL.WinForms.xml",
-        "lib/net45/SharpGL.WinForms.dll",
-        "lib/net45/SharpGL.WinForms.xml",
-        "lib/net472/SharpGL.WinForms.dll",
-        "lib/net472/SharpGL.WinForms.xml",
-        "lib/netcoreapp3.0/SharpGL.WinForms.dll",
-        "lib/netcoreapp3.0/SharpGL.WinForms.xml",
-        "lib/netcoreapp3.1/SharpGL.WinForms.dll",
-        "lib/netcoreapp3.1/SharpGL.WinForms.xml",
-        "sharpgl.winforms.3.1.1.nupkg.sha512",
-        "sharpgl.winforms.nuspec"
       ]
     },
     "System.Data.DataSetExtensions/4.5.0": {
@@ -584,13 +405,28 @@
       "type": "project",
       "path": "../MvkServer/MvkServer.csproj",
       "msbuildProject": "../MvkServer/MvkServer.csproj"
+    },
+    "SharpGL/1.0.0": {
+      "type": "project",
+      "path": "../SharpGL/SharpGL.csproj",
+      "msbuildProject": "../SharpGL/SharpGL.csproj"
+    },
+    "SharpGL.SceneGraph/1.0.0": {
+      "type": "project",
+      "path": "../SharpGL.SceneGraph/SharpGL.SceneGraph.csproj",
+      "msbuildProject": "../SharpGL.SceneGraph/SharpGL.SceneGraph.csproj"
+    },
+    "SharpGL.WinForms/1.0.0": {
+      "type": "project",
+      "path": "../SharpGL.WinForms/SharpGL.WinForms.csproj",
+      "msbuildProject": "../SharpGL.WinForms/SharpGL.WinForms.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "MvkClient >= 1.0.0",
-      "SharpGL >= 3.1.1",
-      "SharpGL.WinForms >= 3.1.1"
+      "SharpGL >= 1.0.0",
+      "SharpGL.WinForms >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -599,11 +435,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\artem\\Source\\Repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkLauncher\\MvkLauncher.csproj",
+      "projectUniqueName": "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkLauncher\\MvkLauncher.csproj",
       "projectName": "MvkLauncher",
-      "projectPath": "C:\\Users\\artem\\Source\\Repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkLauncher\\MvkLauncher.csproj",
+      "projectPath": "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkLauncher\\MvkLauncher.csproj",
       "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\artem\\Source\\Repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkLauncher\\obj\\",
+      "outputPath": "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkLauncher\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\artem\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -620,8 +456,14 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\artem\\Source\\Repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkClient\\MvkClient.csproj": {
-              "projectPath": "C:\\Users\\artem\\Source\\Repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkClient\\MvkClient.csproj"
+            "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkClient\\MvkClient.csproj": {
+              "projectPath": "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkClient\\MvkClient.csproj"
+            },
+            "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\SharpGL.WinForms\\SharpGL.WinForms.csproj": {
+              "projectPath": "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\SharpGL.WinForms\\SharpGL.WinForms.csproj"
+            },
+            "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\SharpGL\\SharpGL.csproj": {
+              "projectPath": "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\SharpGL\\SharpGL.csproj"
             }
           }
         }
@@ -635,16 +477,6 @@
     "frameworks": {
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
-        "dependencies": {
-          "SharpGL": {
-            "target": "Package",
-            "version": "[3.1.1, )"
-          },
-          "SharpGL.WinForms": {
-            "target": "Package",
-            "version": "[3.1.1, )"
-          }
-        },
         "imports": [
           "net461",
           "net462",

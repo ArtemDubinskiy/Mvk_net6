@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "0G45/Nr/0LiIIhyxe68sHyOS9znCVRb8urfgXg3frthAzYB8lEQ5zjm/2L0VX1xZyNj5oBlFtOYC01hfpkDjLg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\SharpGL.WinForms\\SharpGL.WinForms.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\artem\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

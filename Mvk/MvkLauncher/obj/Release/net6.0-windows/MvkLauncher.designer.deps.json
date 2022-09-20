@@ -6,7 +6,6 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "Microsoft.CSharp/4.7.0": {},
       "Microsoft.Win32.SystemEvents/6.0.0": {
         "runtime": {
           "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
@@ -32,40 +31,6 @@
           "lib/netstandard2.0/NVorbis.dll": {
             "assemblyVersion": "0.10.4.0",
             "fileVersion": "0.10.4.0"
-          }
-        }
-      },
-      "SharpGL/3.1.1": {
-        "runtime": {
-          "lib/netcoreapp3.1/SharpGL.dll": {
-            "assemblyVersion": "3.1.1.0",
-            "fileVersion": "3.1.1.0"
-          }
-        }
-      },
-      "SharpGL.SceneGraph/3.1.1": {
-        "dependencies": {
-          "SharpGL": "3.1.1",
-          "System.Drawing.Common": "6.0.0"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/SharpGL.SceneGraph.dll": {
-            "assemblyVersion": "3.1.1.0",
-            "fileVersion": "3.1.1.0"
-          }
-        }
-      },
-      "SharpGL.WinForms/3.1.1": {
-        "dependencies": {
-          "Microsoft.CSharp": "4.7.0",
-          "SharpGL": "3.1.1",
-          "SharpGL.SceneGraph": "3.1.1",
-          "System.Data.DataSetExtensions": "4.5.0"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/SharpGL.WinForms.dll": {
-            "assemblyVersion": "3.1.1.0",
-            "fileVersion": "3.1.1.0"
           }
         }
       },
@@ -115,13 +80,6 @@
     }
   },
   "libraries": {
-    "Microsoft.CSharp/4.7.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
-      "path": "microsoft.csharp/4.7.0",
-      "hashPath": "microsoft.csharp.4.7.0.nupkg.sha512"
-    },
     "Microsoft.Win32.SystemEvents/6.0.0": {
       "type": "package",
       "serviceable": true,
@@ -135,27 +93,6 @@
       "sha512": "sha512-WYnil3DhQHzjCY0dM9I2B3r1vWip90AOuQd25KE4NrjPQBg0tBJFluRLm5YPnO5ZLDmwrfosY8jCQGQRmWI/Pg==",
       "path": "nvorbis/0.10.4",
       "hashPath": "nvorbis.0.10.4.nupkg.sha512"
-    },
-    "SharpGL/3.1.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-tLTsMAl0XMjLhVK++ga65tObn/8IyPEfZ9i+icELcAPJ92mgB/DllVlfDBNJOP5T3C4GuT6YEZn3CVR11GH2qQ==",
-      "path": "sharpgl/3.1.1",
-      "hashPath": "sharpgl.3.1.1.nupkg.sha512"
-    },
-    "SharpGL.SceneGraph/3.1.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-VY4SS/y8Ob8Mbi/oqh0lHA0SRCfRCeZ+/Kk8AM4EAw/vhHdpS1LEuVa0hVE3gA84tp3YFVmwXn8GjeLIA/VfmA==",
-      "path": "sharpgl.scenegraph/3.1.1",
-      "hashPath": "sharpgl.scenegraph.3.1.1.nupkg.sha512"
-    },
-    "SharpGL.WinForms/3.1.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-n+4xnGkVPDRymxP4vPhtcPFw794KrESaXLIBCsDxuj//zx31SGmG1B53Y63x9cS1xlaH6KotHV1OV/MLvTKI0A==",
-      "path": "sharpgl.winforms/3.1.1",
-      "hashPath": "sharpgl.winforms.3.1.1.nupkg.sha512"
     },
     "System.Data.DataSetExtensions/4.5.0": {
       "type": "package",

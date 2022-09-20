@@ -1,0 +1,15 @@
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.SceneGraph\bin\Debug\net6.0\SharpGL.SceneGraph.deps.json
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.SceneGraph\bin\Debug\net6.0\SharpGL.SceneGraph.dll
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.SceneGraph\bin\Debug\net6.0\SharpGL.SceneGraph.pdb
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.SceneGraph\bin\Debug\net6.0\SharpGL.dll
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.SceneGraph\bin\Debug\net6.0\SharpGL.pdb
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.SceneGraph\obj\Debug\net6.0\SharpGL.SceneGraph.csproj.AssemblyReference.cache
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.SceneGraph\obj\Debug\net6.0\SharpGL.SceneGraph.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.SceneGraph\obj\Debug\net6.0\SharpGL.SceneGraph.AssemblyInfoInputs.cache
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.SceneGraph\obj\Debug\net6.0\SharpGL.SceneGraph.AssemblyInfo.cs
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.SceneGraph\obj\Debug\net6.0\SharpGL.SceneGraph.csproj.CoreCompileInputs.cache
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.SceneGraph\obj\Debug\net6.0\SharpGL.SceneGraph.csproj.CopyComplete
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.SceneGraph\obj\Debug\net6.0\SharpGL.SceneGraph.dll
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.SceneGraph\obj\Debug\net6.0\refint\SharpGL.SceneGraph.dll
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.SceneGraph\obj\Debug\net6.0\SharpGL.SceneGraph.pdb
+C:\Users\artem\source\repos\ArtemDubinskiy\Mvk_net_6\Mvk\SharpGL.SceneGraph\obj\Debug\net6.0\ref\SharpGL.SceneGraph.dll

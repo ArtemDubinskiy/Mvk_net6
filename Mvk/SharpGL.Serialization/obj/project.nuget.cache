@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "tePYj3ij2mL1t0SWuGh3H1pzd5nRMHFqcXQHJ9z+bPQxWy6Vgxs4uRhUw8wWb5AZb+RaVXilIeMaghPi1cBjTA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\SharpGL.Serialization\\SharpGL.Serialization.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\artem\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

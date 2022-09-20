@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\artem\\Source\\Repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkAssets\\MvkAssets.csproj": {}
+    "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkAssets\\MvkAssets.csproj": {}
   },
   "projects": {
-    "C:\\Users\\artem\\Source\\Repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkAssets\\MvkAssets.csproj": {
+    "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkAssets\\MvkAssets.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\artem\\Source\\Repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkAssets\\MvkAssets.csproj",
+        "projectUniqueName": "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkAssets\\MvkAssets.csproj",
         "projectName": "MvkAssets",
-        "projectPath": "C:\\Users\\artem\\Source\\Repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkAssets\\MvkAssets.csproj",
+        "projectPath": "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkAssets\\MvkAssets.csproj",
         "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\artem\\Source\\Repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkAssets\\obj\\",
+        "outputPath": "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkAssets\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\artem\\AppData\\Roaming\\NuGet\\NuGet.Config",

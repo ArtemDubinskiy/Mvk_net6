@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "pzKpjV7/lTw8g5sisb6N8HF2B4xljNuVWYW/KfZ0pQb90s9ZbRRZAKUmfWNzD3hW7+AZJm89w0QNy1/QK9peLQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\SharpGL.SceneGraph\\SharpGL.SceneGraph.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\artem\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

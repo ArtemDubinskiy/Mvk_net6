@@ -1,0 +1,11 @@
+[18:53:34] server.runing slot=4
+[18:53:34] server.player.entry Ant [938db156ad9b67fa1d4276ac67649940]
+[18:53:34] server.threadGenLoop.run
+[18:53:34] server.runed
+[18:53:34] EntityTracker: Сущность уже отслеживается!
+[18:54:12] server.threadGenLoop.stop
+[18:54:12] server.stoping
+[18:54:12] server.saving.worlds
+[18:54:12] server.saving.chunk all count:1849 save count:68
+[18:54:12] server.player.entry.repeat Ant [938db156ad9b67fa1d4276ac67649940]
+[18:54:12] server.stoped

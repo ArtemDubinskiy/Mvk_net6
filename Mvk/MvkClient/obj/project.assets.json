@@ -41,19 +41,6 @@
           }
         }
       },
-      "SharpGL/3.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/netcoreapp3.1/SharpGL.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/SharpGL.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.Drawing.Common/6.0.0": {
         "type": "package",
         "dependencies": {
@@ -140,6 +127,16 @@
         "runtime": {
           "bin/placeholder/MvkServer.dll": {}
         }
+      },
+      "SharpGL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/SharpGL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SharpGL.dll": {}
+        }
       }
     }
   },
@@ -187,29 +184,6 @@
         "lib/netstandard2.0/NVorbis.xml",
         "nvorbis.0.10.4.nupkg.sha512",
         "nvorbis.nuspec"
-      ]
-    },
-    "SharpGL/3.1.1": {
-      "sha512": "tLTsMAl0XMjLhVK++ga65tObn/8IyPEfZ9i+icELcAPJ92mgB/DllVlfDBNJOP5T3C4GuT6YEZn3CVR11GH2qQ==",
-      "type": "package",
-      "path": "sharpgl/3.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net40/SharpGL.dll",
-        "lib/net40/SharpGL.xml",
-        "lib/net45/SharpGL.dll",
-        "lib/net45/SharpGL.xml",
-        "lib/net472/SharpGL.dll",
-        "lib/net472/SharpGL.xml",
-        "lib/netcoreapp2.0/SharpGL.dll",
-        "lib/netcoreapp2.0/SharpGL.xml",
-        "lib/netcoreapp3.0/SharpGL.dll",
-        "lib/netcoreapp3.0/SharpGL.xml",
-        "lib/netcoreapp3.1/SharpGL.dll",
-        "lib/netcoreapp3.1/SharpGL.xml",
-        "sharpgl.3.1.1.nupkg.sha512",
-        "sharpgl.nuspec"
       ]
     },
     "System.Drawing.Common/6.0.0": {
@@ -349,6 +323,11 @@
       "type": "project",
       "path": "../MvkServer/MvkServer.csproj",
       "msbuildProject": "../MvkServer/MvkServer.csproj"
+    },
+    "SharpGL/1.0.0": {
+      "type": "project",
+      "path": "../SharpGL/SharpGL.csproj",
+      "msbuildProject": "../SharpGL/SharpGL.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -356,7 +335,7 @@
       "MvkAssets >= 1.0.0",
       "MvkServer >= 1.0.0",
       "NVorbis >= 0.10.4",
-      "SharpGL >= 3.1.1",
+      "SharpGL >= 1.0.0",
       "System.Drawing.Common >= 6.0.0"
     ]
   },
@@ -366,11 +345,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\artem\\Source\\Repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkClient\\MvkClient.csproj",
+      "projectUniqueName": "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkClient\\MvkClient.csproj",
       "projectName": "MvkClient",
-      "projectPath": "C:\\Users\\artem\\Source\\Repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkClient\\MvkClient.csproj",
+      "projectPath": "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkClient\\MvkClient.csproj",
       "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\artem\\Source\\Repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkClient\\obj\\",
+      "outputPath": "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkClient\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\artem\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -387,11 +366,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\artem\\Source\\Repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkAssets\\MvkAssets.csproj": {
-              "projectPath": "C:\\Users\\artem\\Source\\Repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkAssets\\MvkAssets.csproj"
+            "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkAssets\\MvkAssets.csproj": {
+              "projectPath": "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkAssets\\MvkAssets.csproj"
             },
-            "C:\\Users\\artem\\Source\\Repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkServer\\MvkServer.csproj": {
-              "projectPath": "C:\\Users\\artem\\Source\\Repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkServer\\MvkServer.csproj"
+            "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkServer\\MvkServer.csproj": {
+              "projectPath": "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\MvkServer\\MvkServer.csproj"
+            },
+            "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\SharpGL\\SharpGL.csproj": {
+              "projectPath": "C:\\Users\\artem\\source\\repos\\ArtemDubinskiy\\Mvk_net_6\\Mvk\\SharpGL\\SharpGL.csproj"
             }
           }
         }
@@ -409,10 +391,6 @@
           "NVorbis": {
             "target": "Package",
             "version": "[0.10.4, )"
-          },
-          "SharpGL": {
-            "target": "Package",
-            "version": "[3.1.1, )"
           },
           "System.Drawing.Common": {
             "target": "Package",

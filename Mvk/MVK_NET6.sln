@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvkServer", "MvkServer\MvkServer.csproj", "{E16F61AA-60E4-4C50-AE50-082B7AD3BAF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvkServer", "MvkServer\MvkServer.csproj", "{E16F61AA-60E4-4C50-AE50-082B7AD3BAF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvkClient", "MvkClient\MvkClient.csproj", "{10F8E0B6-585D-40F9-8EF5-DF7FE26AEC48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvkClient", "MvkClient\MvkClient.csproj", "{10F8E0B6-585D-40F9-8EF5-DF7FE26AEC48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvkAssets", "MvkAssets\MvkAssets.csproj", "{8AA8E788-0E0F-495E-BC61-30F20B939905}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvkAssets", "MvkAssets\MvkAssets.csproj", "{8AA8E788-0E0F-495E-BC61-30F20B939905}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvkLauncher", "MvkLauncher\MvkLauncher.csproj", "{001B1A0C-023A-471B-B694-6F0130C0F053}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvkLauncher", "MvkLauncher\MvkLauncher.csproj", "{001B1A0C-023A-471B-B694-6F0130C0F053}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpGL", "SharpGL\SharpGL.csproj", "{A6031B90-A7CD-4251-A4F0-D77BAE2B7942}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpGL.SceneGraph", "SharpGL.SceneGraph\SharpGL.SceneGraph.csproj", "{6E3515AF-2308-4DF1-B0F5-5CFB1EFC20AD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpGL.Serialization", "SharpGL.Serialization\SharpGL.Serialization.csproj", "{5225FC6C-B10E-4FDC-9DC2-4B833903A0B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpGL.WinForms", "SharpGL.WinForms\SharpGL.WinForms.csproj", "{82CCDBBD-330A-42A0-83B0-0D3BCD198329}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +41,22 @@ Global
 		{001B1A0C-023A-471B-B694-6F0130C0F053}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{001B1A0C-023A-471B-B694-6F0130C0F053}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{001B1A0C-023A-471B-B694-6F0130C0F053}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6031B90-A7CD-4251-A4F0-D77BAE2B7942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6031B90-A7CD-4251-A4F0-D77BAE2B7942}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6031B90-A7CD-4251-A4F0-D77BAE2B7942}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6031B90-A7CD-4251-A4F0-D77BAE2B7942}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E3515AF-2308-4DF1-B0F5-5CFB1EFC20AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E3515AF-2308-4DF1-B0F5-5CFB1EFC20AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E3515AF-2308-4DF1-B0F5-5CFB1EFC20AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E3515AF-2308-4DF1-B0F5-5CFB1EFC20AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5225FC6C-B10E-4FDC-9DC2-4B833903A0B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5225FC6C-B10E-4FDC-9DC2-4B833903A0B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5225FC6C-B10E-4FDC-9DC2-4B833903A0B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5225FC6C-B10E-4FDC-9DC2-4B833903A0B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82CCDBBD-330A-42A0-83B0-0D3BCD198329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82CCDBBD-330A-42A0-83B0-0D3BCD198329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82CCDBBD-330A-42A0-83B0-0D3BCD198329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82CCDBBD-330A-42A0-83B0-0D3BCD198329}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
