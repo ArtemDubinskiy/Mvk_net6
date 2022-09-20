@@ -2861,26 +2861,21 @@ namespace SharpGL
             PostGLCall();
         }
 
-		/// <summary>
-		/// Get the current OpenGL error code.
-		/// </summary>
-		/// <returns>The current OpenGL error code.</returns>
-		public uint GetError()
-		{
-			try
-			{
-                //return glGetError();
-                return 0;
-            }
+        /// <summary>
+        /// Get the current OpenGL error code.
+        /// </summary>
+        /// <returns>The current OpenGL error code.</returns>
+        public uint GetError()
+        {
 
-			catch
-            {
-                return 0;
+            return glGetError();
 
-            }
-		}
 
-		/// <summary>
+            return 0;
+
+        }
+
+        /// <summary>
 		/// Get the current OpenGL error code.
 		/// </summary>
 		/// <returns>The current OpenGL error code.</returns>
